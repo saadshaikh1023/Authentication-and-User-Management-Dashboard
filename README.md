@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Authentication and User Management Dashboard
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a Next.js application that demonstrates authentication, protected routes, and a user management dashboard. It showcases skills in Next.js, React, Material-UI (MUI), and API integration.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Authentication**
+   - Login page with email and password fields
+   - Authentication guard for protected routes
+   - Redirect to login page for unauthenticated access attempts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Dashboard**
+   - Protected route accessible only to authenticated users
+   - Data table displaying user information (name, age, date of birth)
+   - Age automatically calculated from date of birth
+   - Actions for each user entry (edit, delete)
+   - Option to add new users
+   - Toast notifications for add/edit/delete actions
+   - Skeleton loaders for asynchronous operations
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **API Integration**
+   - Fetches 20 user entries from a backend API
+   - Implements CRUD operations (Create, Read, Update, Delete) for user management
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 13+ (App Router)
+- React 18
+- Material-UI (MUI)
+- React Query for API calls and state management
+- React Hot Toast for notifications
+- date-fns for date calculations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Setup and Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Authentication-and-User-Management-Dashboard.git
+   ```
 
-## Deploy on Vercel
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+5. Demo
+6. 
+   https://www.loom.com/share/ef546fdaf83d409aa5890acc5526eaff?sid=77b71b26-e29f-48c6-8166-04e03dd00ebd
+
+
+
